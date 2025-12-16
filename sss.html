@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>폼 + 이미지</title>
+</head>
+
+<body style="font-family: Arial;">
+
+<table border="1" width="760" cellpadding="10" cellspacing="0">
+  <tr>
+    <!-- 왼쪽: 폼 -->
+    <td width="55%" valign="top">
+
+      <b>다음 내용에 맞게 입력하시오.</b><br>
+      전공 분야를 입력하세요.
+      <select>
+        <option>소프트웨어</option>
+        <option>하드웨어</option>
+        <option>디자인</option>
+      </select>
+
+      <br><br>
+
+      <!-- 라벨/입력 정렬을 위해 안쪽에 table -->
+      <table border="0" cellpadding="6" cellspacing="0" width="100%">
+        <tr>
+          <td width="80"><b>이름</b></td>
+          <td><input type="text" placeholder="이름입력" size="20"></td>
+        </tr>
+        <tr>
+          <td><b>아이디</b></td>
+          <td><input type="text" placeholder="아이디입력" size="20"></td>
+        </tr>
+        <tr>
+          <td><b>비밀번호</b></td>
+          <td><input type="password" size="20"></td>
+        </tr>
+      </table>
+
+      <br>
+
+      <!-- fieldset은 width를 줘서 왼쪽 칸에 꽉 차게 -->
+      <fieldset style="width:95%;">
+        <legend><b>성별조사</b></legend>
+        여성 <input type="radio" name="gender">
+        남성 <input type="radio" name="gender">
+      </fieldset>
+
+      <br>
+
+      <fieldset style="width:95%;">
+        <legend><b>취미조사</b></legend>
+        책읽기 <input type="checkbox">
+        공부하기 <input type="checkbox">
+        책 읽으며 공부하기 <input type="checkbox">
+        컴퓨터 <input type="checkbox">
+      </fieldset>
+
+      <br>
+
+      <b>하고 싶은말</b><br>
+      <textarea cols="45" rows="6" placeholder="하고 싶은 말 입력"></textarea>
+
+      <br><br>
+
+      <!-- 버튼 -->
+      <input type="button" value="완료" onclick="location.href='company.html'">
+      <input type="reset" value="다시작성">
+
+    </td>
+
+    <!-- 오른쪽: 이미지 -->
+    <td width="45%" valign="top" align="center">
+      <img src="girl.jpg" width="300" alt="이미지">
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
